@@ -80,24 +80,82 @@
             </div>
         </nav>
     </header>
-    <main class="container my-4">
-        <h2 class="mb-3">Shopping Cart</h2>
-        
-        <!-- Example product card -->
-        <div class="product-media mb-3 justify-content-center">
-            <div class="media-body">
-                <h4 class="product-name">Product Name <button class="btn btn-danger btn-sm delete-btn">Delete</button></h4>
-                <p class="mb-1">Description...</p>
-                <div class="input-group mb-3" style="width: 150px;">
-                    <span class="input-group-text">MXN</span>
-                    <input type="text" class="form-control" value="Price">
-                    <span class="input-group-text">.00</span>
+    <main>
+        <div class="container" style="display: flex; justify-content: flex-start; flex-wrap: wrap;">
+
+            <div class="row">
+                <div style="width: 80%;">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="media-body">
+                                    <div class="container-title">
+                                        <h4>Producto A <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button></h4>
+                                        <div class="input-group" style="width: 60%;">
+                                            <span class="input-group-text" style="width: 100px;">Cantidad:</span>
+                                            <input type="number" class="form-control" placeholder="">
+                                        </div>
+    
+                                        <div class="input-group" style="padding-top: 10px; width: 60%;">
+                                            <span class="input-group-text" style="width: 100px;">Precio:</span>
+                                            <input type="text" class="form-control" placeholder="">
+                                            <span class="input-group-text">MXN</span>
+                                        </div>
+                                </div>
+                                <img style="height: 160px; float: right;" class="cart_img rounded-circle" src="img/img_armarios/armario2.jpg" alt="imagen producto 1">
+                            </div>
+                        </div>
+                    </div> 
                 </div>
             </div>
-            <img src="img/product-image.jpg" alt="Product Image">
+    
+            <div class="row">
+                <div style="width: 82%;">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="media-body">
+                                    <div class="container-title">
+                                        <h4>Producto B <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button></h4>
+                                        <div class="input-group" style="width: 60%;">
+                                            <span class="input-group-text" style="width: 100px;">Cantidad:</span>
+                                            <input type="number" class="form-control" placeholder="">
+                                        </div>
+    
+                                        <div class="input-group" style="padding-top: 10px; width: 60%;">
+                                            <span class="input-group-text" style="width: 100px;">Precio:</span>
+                                            <input type="text" class="form-control" placeholder="">
+                                            <span class="input-group-text">MXN</span>
+                                        </div>
+                                </div>
+                                <img style="height: 160px; float: right;" class="cart_img rounded-circle" src="img/img_mesas/mesa3.jpg" alt="producto compra">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
         </div>
-
-        <!-- Repeat the above block for each product in the cart -->
+    
+        <div>
+          <div id="total_compra" class="col-8 col-md-6 col-lg-4" style="height: fit-content; width: fit-content;">
+          <div class="card">
+              <div class="card-header">
+                  <h5 class="text-center"><b>Total de compra</b></h5>
+              </div>
+              <div class="card-body">
+                  <p><b>Producto A:</b> 1 x 160.00 MXN</p>
+                  <p><b>Producto B:</b> 1 x 220.00 MXN</p>
+                  <p><b>Costo de envio:</b> 10.00 MXN</p>
+              </div>
+              <div class="card-footer">
+                  <p><b>TOTAL: 390.00 MXN</b></p>
+                  <a name="" id="" class="d-flex justify-content-center btn text-white btn-primary" href="#" role="button">Pagar</a>
+                  <br>
+                  <a name="" id="" class="d-flex justify-content-center btn text-white btn-danger" href="#" role="button">Cancelar</a>
+              </div>
+          </div>
+        </div>
         
     </main>
     <footer>
