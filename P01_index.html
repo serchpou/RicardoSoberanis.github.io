@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Muebles Madera</title>
     <!-- Required meta tags -->
@@ -7,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <style>
-        
         body {
             font-family: Arial, sans-serif;
             padding-top: 80px;
@@ -17,6 +18,29 @@
 
         #logo {
             width: 3em;
+        }
+
+        /* Nuevo estilo para el nombre de la mueblería */
+        .navbar-brand {
+            font-weight: bold;
+            /* Esta clase es de Bootstrap y ayudará a que el texto del título se ajuste según el tamaño del dispositivo */
+            font-size: 1.5rem;
+            /* Tamaño base para dispositivos grandes */
+        }
+
+        /* Responsive text size adjustments */
+        @media (max-width: 992px) {
+            .navbar-brand {
+                font-size: 1.25rem;
+                /* Más pequeño para dispositivos medianos */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar-brand {
+                font-size: 1rem;
+                /* Aún más pequeño para dispositivos pequeños */
+            }
         }
 
         .navbar-brand {
@@ -47,7 +71,6 @@
             background-color: #6c757d;
             border: none;
         }
-
     </style>
 </head>
 
@@ -58,14 +81,16 @@
             <a id="logo" class="navbar-brand" href="P01_index.html">
                 <img src="img/logo.png" alt="logo" class="img-fluid">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <!-- Categorías a la izquierda -->
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Categorías
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -75,28 +100,34 @@
                             <li><a class="dropdown-item" href="#bancos">Bancos</a></li>
                         </ul>
                     </li>
-                    
+
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal" role="button">Login</a>
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal"
+                            role="button">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signupModal" role="button">Signup</a>
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signupModal"
+                            role="button">Signup</a>
                     </li>
                     <li class="nav-item">
-                        <a id="carrito" class="nav-link fa-shopping-cart" href="P01_cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
-                        </svg></a>
+                        <a id="carrito" class="nav-link fa-shopping-cart" href="P01_cart.html"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-cart2" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                            </svg></a>
                     </li>
                 </ul>
             </div>
         </nav>
-                    
+
         <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="First slide"></li>
                 <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
                 <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
             </ol>
@@ -122,14 +153,15 @@
         </div>
     </header>
     <main class="justify-content-center">
-        <h1 class="text-center bold mt-5" style="font-weight: bold;";">PRODUCTOS</h1>
+        <h1 class="text-center bold mt-5" style="font-weight: bold;" ;">PRODUCTOS</h1>
         <div class="container mt-5">
             <h2 id="sillas" class="mb-4 justify-content-center">Sillas</h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
                 <!-- Producto 1 -->
                 <div class="col">
                     <div class="card">
-                        <img src="img/img_sillas/silla1.jpg" class="card-img-top" alt="Producto 1" style="max-height: 200px; object-fit: cover;">
+                        <img src="img/img_sillas/silla1.jpg" class="card-img-top" alt="Producto 1"
+                            style="max-height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">Producto 1</h5>
                             <p class="card-text">Descripción breve del producto 1.</p>
@@ -139,7 +171,8 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="img/img_sillas/silla2.jpg" class="card-img-top" alt="Producto 1" style="max-height: 200px; object-fit: cover;">
+                        <img src="img/img_sillas/silla2.jpg" class="card-img-top" alt="Producto 1"
+                            style="max-height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">Silla M002</h5>
                             <p class="card-text">Descripción breve del producto 1.</p>
@@ -149,7 +182,8 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="img/img_sillas/silla3.jpg" class="card-img-top" alt="Producto 1" style="max-height: 200px; object-fit: cover;">
+                        <img src="img/img_sillas/silla3.jpg" class="card-img-top" alt="Producto 1"
+                            style="max-height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">Producto 1</h5>
                             <p class="card-text">Descripción breve del producto 1.</p>
@@ -159,7 +193,8 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="img/img_sillas/silla4.jpg" class="card-img-top" alt="Producto 1" style="max-height: 200px; object-fit: cover;">
+                        <img src="img/img_sillas/silla4.jpg" class="card-img-top" alt="Producto 1"
+                            style="max-height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">Producto 1</h5>
                             <p class="card-text">Descripción breve del producto 1.</p>
@@ -175,7 +210,8 @@
                 <!-- Producto 1 -->
                 <div class="col">
                     <div class="card">
-                        <img src="img/img_mesas/mesa1.jpg" class="card-img-top" alt="Producto 1" style="max-height: 200px; object-fit: cover;">
+                        <img src="img/img_mesas/mesa1.jpg" class="card-img-top" alt="Producto 1"
+                            style="max-height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">Producto 1</h5>
                             <p class="card-text">Descripción breve del producto 1.</p>
@@ -185,7 +221,8 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="img/img_mesas/mesa2.jpg" class="card-img-top" alt="Producto 1" style="max-height: 200px; object-fit: cover;">
+                        <img src="img/img_mesas/mesa2.jpg" class="card-img-top" alt="Producto 1"
+                            style="max-height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">Producto 1</h5>
                             <p class="card-text">Descripción breve del producto 1.</p>
@@ -195,7 +232,8 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="img/img_mesas/mesa3.jpg" class="card-img-top" alt="Producto 1" style="max-height: 200px; object-fit: cover;">
+                        <img src="img/img_mesas/mesa3.jpg" class="card-img-top" alt="Producto 1"
+                            style="max-height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">Producto 1</h5>
                             <p class="card-text">Descripción breve del producto 1.</p>
@@ -205,7 +243,8 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="img/img_mesas/mesa4.jpg" class="card-img-top" alt="Producto 1" style="max-height: 200px; object-fit: cover;">
+                        <img src="img/img_mesas/mesa4.jpg" class="card-img-top" alt="Producto 1"
+                            style="max-height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">Producto 1</h5>
                             <p class="card-text">Descripción breve del producto 1.</p>
@@ -221,7 +260,8 @@
                 <!-- Producto 1 -->
                 <div class="col">
                     <div class="card">
-                        <img src="img/img_armarios/armario1.jpg" class="card-img-top" alt="Producto 1" style="max-height: 200px; object-fit: cover;">
+                        <img src="img/img_armarios/armario1.jpg" class="card-img-top" alt="Producto 1"
+                            style="max-height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">Producto 1</h5>
                             <p class="card-text">Descripción breve del producto 1.</p>
@@ -231,7 +271,8 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="img/img_armarios/armario2.jpg" class="card-img-top" alt="Producto 1" style="max-height: 200px; object-fit: cover;">
+                        <img src="img/img_armarios/armario2.jpg" class="card-img-top" alt="Producto 1"
+                            style="max-height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">Producto 1</h5>
                             <p class="card-text">Descripción breve del producto 1.</p>
@@ -241,7 +282,8 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="img/img_armarios/armario3.jpg" class="card-img-top" alt="Producto 1" style="max-height: 200px; object-fit: cover;">
+                        <img src="img/img_armarios/armario3.jpg" class="card-img-top" alt="Producto 1"
+                            style="max-height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">Producto 1</h5>
                             <p class="card-text">Descripción breve del producto 1.</p>
@@ -251,7 +293,8 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="img/img_armarios/armario4.jpg" class="card-img-top" alt="Producto 1" style="max-height: 200px; object-fit: cover;">
+                        <img src="img/img_armarios/armario4.jpg" class="card-img-top" alt="Producto 1"
+                            style="max-height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">Producto 1</h5>
                             <p class="card-text">Descripción breve del producto 1.</p>
@@ -267,7 +310,8 @@
                 <!-- Producto 1 -->
                 <div class="col">
                     <div class="card">
-                        <img src="img/img_bancos/banco1.jpg" class="card-img-top" alt="Producto 1" style="max-height: 200px; object-fit: cover;">
+                        <img src="img/img_bancos/banco1.jpg" class="card-img-top" alt="Producto 1"
+                            style="max-height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">Producto 1</h5>
                             <p class="card-text">Descripción breve del producto 1.</p>
@@ -277,7 +321,8 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="img/img_bancos/banco2.jpg" class="card-img-top" alt="Producto 1" style="max-height: 200px; object-fit: cover; margin-top: 10px;">
+                        <img src="img/img_bancos/banco2.jpg" class="card-img-top" alt="Producto 1"
+                            style="max-height: 200px; object-fit: cover; margin-top: 10px;">
                         <div class="card-body">
                             <h5 class="card-title">Producto 1</h5>
                             <p class="card-text">Descripción breve del producto 1.</p>
@@ -287,7 +332,8 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="img/img_bancos/banco3.jpg" class="card-img-top" alt="Producto 1" style="max-height: 200px; object-fit: cover;">
+                        <img src="img/img_bancos/banco3.jpg" class="card-img-top" alt="Producto 1"
+                            style="max-height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">Producto 1</h5>
                             <p class="card-text">Descripción breve del producto 1.</p>
@@ -297,7 +343,8 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="img/img_bancos/banco4.jpg" class="card-img-top" alt="Producto 1" style="max-height: 200px; object-fit: cover;">
+                        <img src="img/img_bancos/banco4.jpg" class="card-img-top" alt="Producto 1"
+                            style="max-height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">Producto 1</h5>
                             <p class="card-text">Descripción breve del producto 1.</p>
@@ -311,22 +358,28 @@
     <footer>
         <nav aria-label="Page navigation example" class="d-flex justify-content-center mt-4">
             <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+                <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
             </ul>
-          </nav>          
+        </nav>
     </footer>
-    
+
     <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkOoaOWyST/+6Ol/+9XbF2GpHq7lYw0B4kPpX4uIVg3G" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkOoaOWyST/+6Ol/+9XbF2GpHq7lYw0B4kPpX4uIVg3G"
+        crossorigin="anonymous"></script>
+
     <!-- Login -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -336,36 +389,51 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <div class="input-group">
-                                <span class="input-group-text">@</span>
-                                <input type="email" class="form-control" id="email" required>
+                    <form id="loginForm" onsubmit="handleLogin(event)">
+                        <div class="bg-white p-5 rounded-5 text-dark">
+                            <div class="d-flex justify-content-center">
+                                <img src="img/person-circle.svg" alt="login-icon" style="height: 7rem;">
                             </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Password</label>
-                            <div class="input-group">
-                                <span class="input-group-text">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
-                                        <path d="M4 1a2 2 0 0 1 2-2 2 2 0 0 1 2 2v3h2V1a2 2 0 0 1 4 0v3h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h1V1a2 2 0 0 1 2-2z"/>
-                                    </svg>
-                                </span>
-                                <input type="password" class="form-control" id="password" required>
+                            <div class="text-center fs-1 fw-bold">Login</div>
+                            <div class="input-group mt-4">
+                                <div class="input-group-text">
+                                    <img src="img/arroba.png" alt="username-icon" style="height: 1rem;">
+                                </div>
+                                <input class="form-control" type="email" placeholder="Email" required>
                             </div>
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="remember">
-                            <label class="form-check-label" for="remember">Remember me</label>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary">Login</button>
+                            <div class="input-group mt-1">
+                                <div class="input-group-text">
+                                    <img src="img/lock.png" alt="password-icon" style="height: 1rem;">
+                                </div>
+                                <input class="form-control" type="password" placeholder="Password" required>
+                            </div>
+                            <div class="d-flex justify-content-around mt-1">
+                                <div class="d-flex align-items-center gap-1">
+                                    <input class="form-check-input" type="checkbox">
+                                    <div class="pt-1" style="font-size: 0.9rem;">Remember me</div>
+                                </div>
+                                <div class="pt-1">
+                                    <a class="text-decoration-none fw-semibold fst-italic" style="font-size: 0.9rem;"
+                                        href="#">Forgot your password?</a>
+                                </div>
+                            </div>
+                            <button type="submit"
+                                class="btn btn-dark text-white w-100 mt-4 fw-semibold shadow-sm">Login</button>
+                            <div class="p-3">
+                                <div class="border-bottom text-center" style="height: 0.9rem;">
+                                    <span class="bg-light px-3">or</span>
+                                </div>
+                            </div>
+                            <div class="btn d-flex gap-2 justify-content-center border mt-3 shadow">
+                                <img src="img/search.png" alt="google-icon" style="height: 1.6rem;">
+                                <div class="fw-semibold text-dark">Continue with Google</div>
+                            </div>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <p class="text-center">Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign up here</a></p>
+                    <p class="text-center">Don't have an account? <a href="#" data-bs-toggle="modal"
+                            data-bs-target="#signupModal">Sign up here</a></p>
                 </div>
             </div>
         </div>
@@ -376,37 +444,52 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5> <button type="button" class="btn-close"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form id="signupForm">
-                        <div class="mb-3 row">
-                            <div class="col-6">
-                                <input type="text" class="form-control" placeholder="First Name" id="signupFirstName" required>
+                        <div class="bg-white p-5 rounded-5 text-dark">
+                            <div class="d-flex justify-content-center"> <img src="img/person-circle.svg"
+                                    alt="signup-icon" style="height: 7rem;"> </div>
+                            <div class="text-center fs-1 fw-bold">Sign Up</div>
+                            <div class="input-group mt-4">
+                                <div class="input-group-text"> <img src="img/person-fill.svg" alt="firstname-icon"
+                                        style="height: 1rem;"> </div> <input type="text" class="form-control"
+                                    placeholder="First Name" id="signupFirstName" required>
                             </div>
-                            <div class="col-6">
-                                <input type="text" class="form-control" placeholder="Last Name" id="signupLastName" required>
+                            <div class="input-group mt-1">
+                                <div class="input-group-text"> <img src="img/person-fill.svg" alt="lastname-icon"
+                                        style="height: 1rem;"> </div> <input type="text" class="form-control"
+                                    placeholder="Last Name" id="signupLastName" required>
                             </div>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Email" id="signupEmail" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="password" class="form-control" placeholder="Password" id="signupPassword" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="password" class="form-control" placeholder="Confirm Password" id="confirmPassword" required>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary">Sign Up</button>
+                            <div class="input-group mt-1">
+                                <div class="input-group-text"> <img src="img/arroba.png" alt="email-icon"
+                                        style="height: 1rem;"> </div> <input type="email" class="form-control"
+                                    placeholder="Email" id="signupEmail" required>
+                            </div>
+                            <div class="input-group mt-1">
+                                <div class="input-group-text"> <img src="img/lock.png" alt="password-icon"
+                                        style="height: 1rem;"> </div> <input type="password" class="form-control"
+                                    placeholder="Password" id="signupPassword" required>
+                            </div>
+                            <div class="input-group mt-1">
+                                <div class="input-group-text"> <img src="img/lock.png" alt="confirmpassword-icon"
+                                        style="height: 1rem;"> </div> <input type="password" class="form-control"
+                                    placeholder="Confirm Password" id="confirmPassword" required>
+                            </div> <button type="submit"
+                                class="btn btn-dark text-white w-100 mt-4 fw-semibold shadow-sm">Sign Up</button>
                         </div>
                     </form>
+                </div>
+                <div class="modal-footer">
+                    <p class="text-center">Already have an account? <a href="#" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Log in here</a></p>
                 </div>
             </div>
         </div>
     </div>
-    
-    
+
 </body>
+
 </html>

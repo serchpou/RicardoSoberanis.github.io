@@ -46,17 +46,27 @@
             background-color: #6c757d;
             border: none;
         }
+        .btn .button-link {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            line-height: inherit;
+        }
+
+        .btn .button-link:hover,
+        .btn .button-link:focus {
+            color: white;
+            text-decoration: none;
+        }
     </style>
 </head>
 
 <body>
 
-    
-
-
     <header>
         <nav class="navbar navbar-expand-sm bg-gray-300">
-            <!-- Logo a la izquierda -->
             <a id="logo" class="navbar-brand" href="P01_index.html">
                 <img src="img/logo.png" alt="logo" class="img-fluid">
             </a>
@@ -81,82 +91,48 @@
         </nav>
     </header>
     <main>
-        <div class="container" style="display: flex; justify-content: flex-start; flex-wrap: wrap;">
-
+        <div class="container mt-4">
+            <h2>Carrito de Compras</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img style="height: 160px; float: right;" class="cart_img rounded-circle" src="img/img_armarios/armario2.jpg" alt="imagen producto 1">
+                            Nombre del Producto
+                        </td>
+                        <td>$123.00</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="form-control">
+                        </td>
+                        <td>$123.00</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             <div class="row">
-                <div style="width: 80%;">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="media">
-                                <div class="media-body">
-                                    <div class="container-title">
-                                        <h4>Producto A <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button></h4>
-                                        <div class="input-group" style="width: 60%;">
-                                            <span class="input-group-text" style="width: 100px;">Cantidad:</span>
-                                            <input type="number" class="form-control" placeholder="">
-                                        </div>
-    
-                                        <div class="input-group" style="padding-top: 10px; width: 60%;">
-                                            <span class="input-group-text" style="width: 100px;">Precio:</span>
-                                            <input type="text" class="form-control" placeholder="">
-                                            <span class="input-group-text">MXN</span>
-                                        </div>
-                                </div>
-                                <img style="height: 160px; float: right;" class="cart_img rounded-circle" src="img/img_armarios/armario2.jpg" alt="imagen producto 1">
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-            </div>
-    
-            <div class="row">
-                <div style="width: 82%;">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="media">
-                                <div class="media-body">
-                                    <div class="container-title">
-                                        <h4>Producto B <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button></h4>
-                                        <div class="input-group" style="width: 60%;">
-                                            <span class="input-group-text" style="width: 100px;">Cantidad:</span>
-                                            <input type="number" class="form-control" placeholder="">
-                                        </div>
-    
-                                        <div class="input-group" style="padding-top: 10px; width: 60%;">
-                                            <span class="input-group-text" style="width: 100px;">Precio:</span>
-                                            <input type="text" class="form-control" placeholder="">
-                                            <span class="input-group-text">MXN</span>
-                                        </div>
-                                </div>
-                                <img style="height: 160px; float: right;" class="cart_img rounded-circle" src="img/img_mesas/mesa3.jpg" alt="producto compra">
-                                </div>
-                        </div>
+                <div class="col-md-4 offset-md-8">
+                    <ul class="list-group">
+                        <li class="list-group-item">Subtotal: <strong>$246.00</strong></li>
+                        <!-- Agregar impuestos y otros cargos si es necesario -->
+                        <li class="list-group-item">Total: <strong>$246.00</strong></li>
+                    </ul>
+                    <div class="mt-3">
+                        <button class="btn btn-success btn-lg btn-block"> <a class="button-link"
+                                href="infoenvio.html">Proceder al Pago</a></button>
                     </div>
                 </div>
             </div>
-          </div>
         </div>
-    
-        <div>
-          <div id="total_compra" class="col-8 col-md-6 col-lg-4" style="height: fit-content; width: fit-content;">
-          <div class="card">
-              <div class="card-header">
-                  <h5 class="text-center"><b>Total de compra</b></h5>
-              </div>
-              <div class="card-body">
-                  <p><b>Producto A:</b> 1 x 160.00 MXN</p>
-                  <p><b>Producto B:</b> 1 x 220.00 MXN</p>
-                  <p><b>Costo de envio:</b> 10.00 MXN</p>
-              </div>
-              <div class="card-footer">
-                  <p><b>TOTAL: 390.00 MXN</b></p>
-                  <a name="" id="" class="d-flex justify-content-center btn text-white btn-primary" href="#" role="button">Pagar</a>
-                  <br>
-                  <a name="" id="" class="d-flex justify-content-center btn text-white btn-danger" href="#" role="button">Cancelar</a>
-              </div>
-          </div>
-        </div>
-        
     </main>
     <footer>
         
